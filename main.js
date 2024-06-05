@@ -8,8 +8,8 @@ let links = document.querySelectorAll(".grades section[role=navigation] a");
 submit.onclick = function (e) {
   e.preventDefault();
   if (
-    userName.value === "2130153" &&
-    password.value === "Mmm010602003rr%" &&
+    userName.value === "0" &&
+    password.value === "0" &&
     document.querySelector("input[type=radio].student:checked")
   ) {
     userName.classList.remove("incorrect");
@@ -28,3 +28,6 @@ links.forEach((link) => {
     grades.style.display = "none";
   });
 });
+
+// userName.value === "2130153" &&
+// password.value === "Mmm010602003rr%" &&

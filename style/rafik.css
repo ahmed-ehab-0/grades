@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   line-height: 1.5;
 }
 
@@ -22,7 +22,7 @@ td {
 }
 
 a {
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   text-decoration: none;
 }
 
@@ -31,7 +31,7 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -58,8 +58,8 @@ a {
   font-weight: 500;
 }
 
-.log-in input[type=text],
-.log-in input[type=password] {
+.log-in input[type="text"],
+.log-in input[type="password"] {
   background-color: #f6f6f6;
   outline: none;
   color: #0d0d0d;
@@ -73,15 +73,15 @@ a {
   border-radius: 5px 5px 5px 5px;
 }
 
-.log-in input[type=text]:focus,
-.log-in input[type=password]:focus {
+.log-in input[type="text"]:focus,
+.log-in input[type="password"]:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
 
-.log-in input[type=text].incorrect,
-.log-in input[type=password].incorrect {
-  border: 1px solid red
+.log-in input[type="text"].incorrect,
+.log-in input[type="password"].incorrect {
+  border: 1px solid red;
 }
 
 .log-in .options-login {
@@ -90,12 +90,12 @@ a {
 
 .log-in .options-login .form-check {
   display: inline-flex;
-  margin-right: .75rem;
+  margin-right: 0.75rem;
   align-items: center;
 }
 
 .log-in .options-login .form-check input {
-  margin-right: .3125rem;
+  margin-right: 0.3125rem;
 }
 
 .log-in .options-login .form-check label {
@@ -154,14 +154,14 @@ a {
 }
 
 .grades {
-  display: none;
+  display: block;
   direction: rtl;
   color: rgb(102, 102, 102);
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 1.2;
 }
 
-.grades section[role=main] {
+.grades section[role="main"] {
   padding: 25px;
   height: 100%;
   margin-right: 271px;
@@ -170,32 +170,32 @@ a {
   display: block;
 }
 
-.grades section[role=main] .title {
+.grades section[role="main"] .title {
   color: #2779c3;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
 }
 
-.grades section[role=main] .title h1 {
+.grades section[role="main"] .title h1 {
   font: inherit;
   text-shadow: 0px 1px 1px #b3b3b3;
   color: #4f6f6c;
   margin: 0;
 }
 
-.grades section[role=main] div table {
+.grades section[role="main"] div table {
   width: 70%;
   font-size: 10pt;
   background-color: #fffef9;
 }
 
-.grades section[role=main] div table tbody tr td:first-child {
+.grades section[role="main"] div table tbody tr td:first-child {
   font-weight: bold;
 }
 
-.grades section[role=main] span.date {
-  color: #214E73;
+.grades section[role="main"] span.date {
+  color: #214e73;
   cursor: default;
   font-weight: bold;
   background-color: #dcedf5;
@@ -203,30 +203,29 @@ a {
   padding-bottom: 5px;
 }
 
-.grades section[role=main] .main-table {
+.grades section[role="main"] .main-table {
   width: 80%;
   font-size: 10pt;
   background-color: #fffef9;
   direction: ltr;
 }
 
-.grades section[role=main] .main-table thead {
+.grades section[role="main"] .main-table thead {
   background: #dcedf5;
-
 }
 
-.grades section[role=main] .main-table thead th {
+.grades section[role="main"] .main-table thead th {
   text-align: center;
   width: 15%;
-  color: #214E73;
+  color: #214e73;
 }
 
-.grades section[role=main] .main-table tbody tr {
+.grades section[role="main"] .main-table tbody tr {
   border-bottom: 1pt solid grey;
   text-align: center;
 }
 
-.grades section[role=main] .main-table tbody tr td table {
+.grades section[role="main"] .main-table tbody tr td table {
   direction: rtl;
   text-align: right;
   font-size: 10pt;
@@ -234,33 +233,32 @@ a {
   width: 100%;
 }
 
-.grades section[role=main] .main-table tbody tr td table tr {
+.grades section[role="main"] .main-table tbody tr td table tr {
   border: none;
 }
 
-.grades section[role=main] .main-table tbody tr td table td:first-child {
+.grades section[role="main"] .main-table tbody tr td table td:first-child {
   text-align: right;
   width: 50%;
 }
 
-.grades section[role=main] .main-table tbody tr td table td span {
+.grades section[role="main"] .main-table tbody tr td table td span {
   margin-left: 10px;
 }
 
-.grades section[role=main] .main-table tbody tr td table td:last-child {
+.grades section[role="main"] .main-table tbody tr td table td:last-child {
   margin: 7px;
   width: 25%;
 }
 
-.grades section[role=main] div.special-tr {
+.grades section[role="main"] div.special-tr {
   text-align: right;
   white-space: nowrap;
   font-weight: bold;
   font-size: 10pt;
-
 }
 
-.grades section[role=navigation] {
+.grades section[role="navigation"] {
   padding: 25px 0px;
   top: 0px;
   width: 271px;
@@ -270,12 +268,12 @@ a {
   line-height: 1.22;
 }
 
-.grades section[role=navigation] header {
+.grades section[role="navigation"] header {
   margin: 0px 20px 25px 0px;
   padding-left: 25px;
 }
 
-.grades section[role=navigation] header h1 {
+.grades section[role="navigation"] header h1 {
   color: rgb(15 19 160);
   font-style: italic;
   font-weight: bold;
@@ -284,11 +282,11 @@ a {
   text-shadow: none;
 }
 
-.grades section[role=navigation] header h1 em {
+.grades section[role="navigation"] header h1 em {
   font-size: 60%;
 }
 
-.grades section[role=navigation] section {
+.grades section[role="navigation"] section {
   border-color: rgb(191, 191, 191);
   background-color: rgb(217, 217, 217);
   margin-bottom: 25px;
@@ -298,16 +296,15 @@ a {
   border-top-style: solid;
   display: block;
   font-family: "PT Sans", Arial, sans-serif;
-
 }
 
-.grades section[role=navigation] section div {
+.grades section[role="navigation"] section div {
   margin-top: 10px;
   margin-left: 2px;
   float: left;
 }
 
-.grades section[role=navigation] section div a.data {
+.grades section[role="navigation"] section div a.data {
   cursor: default;
   font-size: 6pt;
   color: rgb(76, 76, 76);
@@ -316,17 +313,17 @@ a {
   display: block;
 }
 
-.grades section[role=navigation] section div ul {
+.grades section[role="navigation"] section div ul {
   list-style: none;
   margin: 5px 0px 0px;
 }
 
-.grades section[role=navigation] section div ul li {
+.grades section[role="navigation"] section div ul li {
   margin-right: 5px;
   float: left;
 }
 
-.grades section[role=navigation] section div ul a {
+.grades section[role="navigation"] section div ul a {
   font-size: 6pt;
   padding: 2px 6px;
   border: currentColor;
@@ -344,7 +341,7 @@ a {
   transition: all 400ms ease;
 }
 
-.grades section[role=navigation] section img {
+.grades section[role="navigation"] section img {
   margin-left: 50px;
   padding: 3px;
   border: 1px solid rgb(179, 179, 179);
@@ -354,30 +351,29 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
-.grades section[role=navigation] nav {
+.grades section[role="navigation"] nav {
   margin-right: 20px;
   font-size: 116%;
   margin-bottom: 25px;
 }
 
-.grades section[role=navigation] nav ul {
+.grades section[role="navigation"] nav ul {
   direction: rtl;
   text-align: right;
   list-style: none;
   margin: 0px;
   background-image: url(../images/bg_aside_nav.png);
   background-repeat: no-repeat;
-
 }
 
-.grades section[role=navigation] nav ul li {
+.grades section[role="navigation"] nav ul li {
   text-align: right;
   background-image: url(../images/bg_aside_nav.png);
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-.grades section[role=navigation] nav ul li a {
+.grades section[role="navigation"] nav ul li a {
   color: #2779c3;
   background-position: 230px 8px;
   padding: 7px 0px 7px 50px;
@@ -392,49 +388,47 @@ a {
   transition: color 400ms ease;
 }
 
-.grades section[role=navigation] nav ul li a.current {
+.grades section[role="navigation"] nav ul li a.current {
   color: rgb(110 33 181);
-  ;
 }
 
-.grades section[role=navigation] nav ul li a:hover {
+.grades section[role="navigation"] nav ul li a:hover {
   color: rgb(110 33 181);
-  ;
 }
 
-.grades section[role=navigation] nav ul li a.dashboard {
+.grades section[role="navigation"] nav ul li a.dashboard {
   background-image: url(../images/icon_nav_dashboard.png);
 }
 
-.grades section[role=navigation] nav ul li a.projects {
+.grades section[role="navigation"] nav ul li a.projects {
   background-image: url(../images/icon_nav_projects.png);
 }
 
-.grades section[role=navigation] nav ul li a.products {
+.grades section[role="navigation"] nav ul li a.products {
   background-image: url(../images/icon_nav_products.png);
 }
 
-.grades section[role=navigation] nav ul li a.events {
+.grades section[role="navigation"] nav ul li a.events {
   background-image: url(../images/icon_nav_events.png);
 }
 
-.grades section[role=navigation] nav ul li a.gallary {
+.grades section[role="navigation"] nav ul li a.gallary {
   background-image: url(../images/icon_nav_gallery.png);
 }
 
-.grades section[role=navigation] nav ul li ul {
+.grades section[role="navigation"] nav ul li ul {
   padding-right: 30px;
   padding-bottom: 10px;
   margin-left: 50px;
 }
 
-.grades section[role=navigation] nav ul li ul li {
+.grades section[role="navigation"] nav ul li ul li {
   padding: 2px 0px 2px 10px;
   background-position: right;
   background-image: url(../images/icon_list_style.png);
 }
 
-.grades section[role=navigation] nav ul li ul li a {
+.grades section[role="navigation"] nav ul li ul li a {
   font-size: 13px;
   height: 20px;
   font-weight: normal;
