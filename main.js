@@ -8,8 +8,8 @@ let links = document.querySelectorAll(".grades section[role=navigation] a");
 submit.onclick = function (e) {
   e.preventDefault();
   if (
-    userName.value === "0" &&
-    password.value === "0" &&
+    userName.value === "00" &&
+    password.value === "00" &&
     document.querySelector("input[type=radio].student:checked")
   ) {
     userName.classList.remove("incorrect");
